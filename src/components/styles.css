@@ -1,0 +1,270 @@
+.left-container{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    padding:40px 45px ;
+    border-right: 1px solid rgb(229, 155, 155);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right-container{
+    width:60%;
+    padding:45px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color:rgb(238, 195, 195);
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+input{
+    border:1px solid rgb(229, 155, 155);
+    background-color: transparent;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+input:focus{
+    background-color: rgba(0,0,0,0.5);
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+textarea{
+    border:1px solid rgb(229, 155, 155);
+    background-color: transparent;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    height:150px;
+    margin-right: 40px;
+}
+textarea:focus{
+    background-color: rgba(0,0,0,0.5);
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+.submit-button{
+    background: rgba(255,255,255,0.85);
+    margin-right: 40px;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border:1px solid white;
+    transition: all 0.2s ease-in;
+}
+.submit-button:hover{
+    background-color:rgba(0,0,0,0.9);
+    color:white;
+    transition: all 0.2s ease-in;
+}
+.feedback-message{
+    margin-top: 30px;
+    text-align: center;
+    color:white
+}
+
+.search-bar{
+    margin-right: 0px;
+    margin-top: 25px;
+    background-color: white;
+}
+.heading{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color:white
+}
+.notes-container{
+    margin-bottom: 8px;
+}
+.notes-template{
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding:10px 10px 10px 20px;
+    display: flex;
+}
+.icon-cont{
+    width:12%;
+}
+.icon-cont img{
+    width: 70px;
+    height:70px;
+}
+.text-cont{
+    width:65%;
+}
+.text-cont div{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.text-cont span{
+    font-size: 0.9rem;
+    font-weight: 400;   
+}
+.buttons-cont{
+    width:23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons{
+    background-color: dodgerblue;
+    color:white;
+    width:80px;
+    text-align: center;
+    padding:4px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: tomato;
+    transition: all 0.3s ease-in;
+}
+.edit-container{
+    background-color: white;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding:10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.edit-container input{
+    background-color: white;
+    color:rgb(27, 26, 26);
+    margin-bottom: 10px;
+}
+.edit-container textarea{
+    background-color: white;
+    color:rgb(27, 26, 26);
+    margin-bottom: 10px;
+    height:40px
+}
+.editfeedback-message{
+    position: absolute;
+    right:55px;
+    bottom:10px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width:800px){
+    .left-container{
+        width:95%;
+        padding:10px 10px 50px 10px ;
+        border-right: none;
+        border-bottom: 1px solid rgb(229, 155, 155);
+        margin-top: 10px;
+    }
+    .right-container{
+        width:95%;
+        padding:10px;
+    }
+    label{
+        margin-bottom: 3px;
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    input{
+        margin-right: 0px;
+    }
+    textarea{
+        margin-right: 0px;
+    }
+    .submit-button{
+        margin-right: 0px;
+    }
+    .search-bar{
+        margin-right: 0px;
+        margin-top: 25px;
+        background-color: white;
+    }
+    .heading{
+        font-size: 1.4rem;
+    }
+    .notes-container{
+        margin-bottom: 8px;
+    }
+    .notes-template{
+        background-color: rgba(255,255,255,0.85);
+        border-radius: 10px;
+        padding:10px 10px 10px 20px;
+        display: flex;
+    }
+    .icon-cont{
+        width:12%;
+    }
+    .icon-cont img{
+        width: 70px;
+        height:70px;
+    }
+    .text-cont{
+        width:65%;
+    }
+    .text-cont div{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .text-cont span{
+        font-size: 0.9rem;
+        font-weight: 400;   
+    }
+    .buttons-cont{
+        width:23%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .buttons{
+        background-color: dodgerblue;
+        color:white;
+        width:80px;
+        text-align: center;
+        padding:4px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    .buttons:hover{
+        background-color: tomato;
+        transition: all 0.3s ease-in;
+    }
+    .edit-container{
+        background-color: white;
+        background-color: rgba(255,255,255,0.85);
+        border-radius: 10px;
+        padding:10px 10px 10px 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .edit-container input{
+        background-color: white;
+        color:rgb(27, 26, 26);
+        margin-bottom: 10px;
+    }
+    .edit-container textarea{
+        background-color: white;
+        color:rgb(27, 26, 26);
+        margin-bottom: 10px;
+        height:40px
+    }
+    .editfeedback-message{
+        position: absolute;
+        right:55px;
+        bottom:10px;
+        font-size: 0.9rem;
+    }
+}

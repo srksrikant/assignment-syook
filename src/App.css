@@ -1,0 +1,17 @@
+.App {
+  background: linear-gradient(to bottom,rgb(27, 19, 19,0.1),rgba(25, 25, 25,1)),url("./_images/background.jpg");
+  background-size:cover;
+  background-repeat: repeat;
+  background-position: center;
+  min-height: 100vh;
+  height:100%;
+  display: flex;
+  font-family: "Poppins";
+  width: 100%;
+}
+
+@media screen and (max-width:800px){
+  .App {
+    flex-direction: column;
+  }
+}
